@@ -1,3 +1,3 @@
 class { 'motd':
-  content => "xxx\n",
+  #content => "xxx\n",
 }
