@@ -1,4 +1,4 @@
 ---
   # This is used to overwrite default values in modules...
   lab_motd:
-    content: "This system is managed by Puppet using the dev branch and pulling data from yaml.\n"
+    file:content: "This system is managed by Puppet using the dev branch and pulling data from yaml.\n"
