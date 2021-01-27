@@ -18,6 +18,6 @@ mod 'puppetlabs/stdlib',  '6.5.0'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-#mod 'lab_motd',
-#  git:    'http://gitlab.mllab/puppet/control-repo/-/tree/dev/modules/lab_motd',
+mod 'lab_motd',
+  git:    'http://gitlab.mllab/puppet/control-repo/-/tree/dev/modules/lab_motds',
 #  branch: 'dev'
