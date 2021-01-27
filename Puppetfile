@@ -19,5 +19,5 @@ mod 'puppetlabs/stdlib',  '6.5.0'
 #  branch: 'docs_experiment'
 
 mod 'lab_motd',
-  git:    'http://gitlab.mllab/puppet/control-repo/-/tree/dev/modules/lab_motds',
-#  branch: 'dev'
+  git:    'http://gitlab.mllab/puppet/control-repo/-/tree/dev/modules/lab_motd',
+  commit: '0ae25d3ad9e46662aa42f1d5dbe6805a4b2c0972'
