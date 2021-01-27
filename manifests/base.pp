@@ -1,1 +1,1 @@
-include lab_motd
+
