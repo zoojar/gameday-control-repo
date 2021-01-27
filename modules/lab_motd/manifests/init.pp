@@ -11,6 +11,6 @@ class lab_motd {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => 'This system is managed by Puppet using the dev branch./n',
+    content => "This system is managed by Puppet using the dev branch.\r\n",
     }
 }
