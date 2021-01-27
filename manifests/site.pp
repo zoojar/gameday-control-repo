@@ -28,4 +28,5 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+    notify { "For Node - ${fqdn} this is being picked up from the site.pp file": }
 }
