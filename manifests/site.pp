@@ -25,9 +25,5 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  include lab_motd
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-    notify { "For Node - ${fqdn} this is being picked up from the site.pp file": }
+  include base
 }
