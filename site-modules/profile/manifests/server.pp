@@ -3,6 +3,6 @@
 # A description of what this class does
 #
 # @example
-#   include profile::base
-class profile::base {
+#   include profile::server
+class profile::server {
 }
