@@ -5,4 +5,5 @@
 # @example
 #   include profile::base
 class profile::base {
+  include motd
 }
