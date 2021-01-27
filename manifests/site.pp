@@ -27,3 +27,6 @@ File { backup => false }
 node default {
   include base
 }
+node 'host1.mllab' {
+  include lab_motd
+}
