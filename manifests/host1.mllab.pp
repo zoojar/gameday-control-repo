@@ -1,3 +1,3 @@
 node 'host1.mllab' {
-  include motd
+  include lab_motd
 }
