@@ -8,6 +8,5 @@ hierarchy:
   - name: "Yaml backend"
     data_hash: yaml_data
     paths:
-      - "nodes/%{::fqdn}.yaml"
-      - "role/%{::role}"
+      - "hosts/%{::fqdn}.yaml"
       - "common.yaml"
