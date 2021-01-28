@@ -1,3 +1,3 @@
 class { 'motd':
-  motd_content => "test\n",
+  #content => "test\n",
 }

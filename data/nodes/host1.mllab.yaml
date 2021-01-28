@@ -2,4 +2,4 @@
 role: role::webserver
   # This is used to overwrite default values in modules...
 motd:
-  motd_content: "This system is managed by Puppet using the dev branch and pulling data from yaml.\n"
+  content: "This system is managed by Puppet using the dev branch and pulling data from yaml.\n"
