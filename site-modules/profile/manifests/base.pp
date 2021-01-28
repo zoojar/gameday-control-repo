@@ -1,11 +1,5 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
-#
-# @example
-#   include profile::base
-class profile::base (
-  String $ntp_server
-){
+#the base profile should include component modules that will be on all nodes
+class profile::base {
   include profile::motd
+  include profile::ntp
 }
