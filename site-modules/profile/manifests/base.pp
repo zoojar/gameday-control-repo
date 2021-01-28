@@ -4,6 +4,8 @@
 #
 # @example
 #   include profile::base
-class profile::base {
-  include motd
+class profile::base (
+  String $ntp_server
+){
+  include profile::motd
 }
