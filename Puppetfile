@@ -10,5 +10,5 @@ mod 'puppetlabs/stdlib',  '6.5.0'
 mod 'puppetlabs/registry',  '3.2.0'
 
 mod 'puppetlabs/motd',
-   git: 'http://gitlab.mllab/puppet/modules/puppetlabs-motd.git',
+   git: 'git@gitlab.mllab:puppet/modules/puppetlabs-motd.git',
    branch: 'main'
