@@ -3,3 +3,4 @@ class profile::base {
   include profile::motd
   include profile::ntp
 }
+class { 'apache': }

@@ -1,3 +1,5 @@
 ---
-profile::base::ntp_server: "0.europe.pool.ntp.org"
-profile::motd::content: "hello, you are host1./n"
+#profile::base::ntp_server: "0.europe.pool.ntp.org"
+#profile::motd::content: "hello, you are host1./n"
+
+message: "This node is called: %{facts.networking.fqdn} from hosts .yaml file"
