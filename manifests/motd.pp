@@ -1,3 +1,3 @@
 class { 'motd':
-  #content => "test\n",
+  content => "Managed by Puppet!.\n",
 }
