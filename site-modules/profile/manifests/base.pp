@@ -3,6 +3,7 @@ class profile::base {
   include profile::motd
   include profile::ntp
   include profile::sysadmins
+  include profile::stduser
   include profile::users
   include profile::sysadmins
 }
