@@ -3,10 +3,11 @@
 # A description of what this class does
 #
 # @example
-class profile::motd (
-  String $content
-){
-  class { 'motd':
-    content => $content,
-  }
+class profile::motd #(
+  #String $content
+#)
+{
+  # class { 'motd':
+  #  content => $content,
+  #}
 }
