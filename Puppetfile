@@ -10,6 +10,8 @@ mod 'puppetlabs/concat',    '6.4.0'
 mod 'puppetlabs/registry',  '3.2.0'
 mod 'puppetlabs-motd',  '4.3.0'
 mod 'puppet-nginx', '3.0.0'
+#mod 'puppetlabs-mysql', '10.9.1'
+#mod 'puppetlabs-resource_api', '1.1.0'
 
 # Modules from gitlab modules repo
 
