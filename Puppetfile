@@ -9,7 +9,7 @@ mod 'puppetlabs/stdlib',  '6.5.0'
 mod 'puppetlabs/concat',    '6.4.0'
 mod 'puppetlabs/registry',  '3.2.0'
 mod 'puppetlabs-motd',  '4.3.0'
-mod 'puppetlabs/apache',  '5.9.0'
+mod 'puppet-nginx', '3.0.0'
 
 # Modules from gitlab modules repo
 

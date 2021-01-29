@@ -2,4 +2,4 @@
 profile::base::ntp_server: "0.europe.pool.ntp.org"
 #profile::motd::content: "hello, you are host1./n"
 
-message: "This node is called: %{facts.networking.fqdn} from hosts .yaml file"
+profile::motd::content: "This node is called: %{facts.networking.fqdn} from hosts .yaml file. /n"
