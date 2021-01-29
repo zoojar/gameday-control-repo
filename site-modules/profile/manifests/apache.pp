@@ -3,10 +3,11 @@
 # A description of what this class does
 #
 # @example
-class profile::motd (
-  String $content
-){
-  class { 'motd':
-    content => $content,
+#   include profile::apache
+class profile::apache {
+  class { 'apache':
+    default_vhost => false,
   }
 }
+
+

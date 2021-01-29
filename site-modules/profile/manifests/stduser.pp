@@ -3,10 +3,9 @@
 # A description of what this class does
 #
 # @example
-class profile::motd (
-  String $content
-){
-  class { 'motd':
-    content => $content,
+#   include profile::stduser
+class profile::stduser {
+  group { 'stduser':
+    ensure => present,
   }
 }

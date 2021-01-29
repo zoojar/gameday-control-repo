@@ -3,6 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include profile::nginx
-class profile::nginx {
+#   include profile::sysadmins
+class profile::sysadmins {
+  group { 'sysadmins':
+    ensure => present,
+  }
 }

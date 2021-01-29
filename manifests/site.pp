@@ -12,5 +12,9 @@ node default {
     # otherwise fallback to a plain fact (usually an external fact [on disk])
   #  include "role::${facts['role']}"
   #}
-  include role::webserver
+}
+
+node 'host1.mllab' {
+  include profile::base
+  #include role::webserver
 }
