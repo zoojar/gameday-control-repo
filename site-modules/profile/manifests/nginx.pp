@@ -5,7 +5,4 @@
 # @example
 #   include profile::nginx
 class profile::nginx {
-  nginx::resource::server { 'www.puppetlabs.com':
-  www_root => '/var/www/www.puppetlabs.com',
-  }
 }
