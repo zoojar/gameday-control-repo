@@ -6,7 +6,6 @@
 #   include profile::ntp
 class profile::ntp {
   class { 'ntp':
-    country => 'uk',
-    servers => '',
+    servers => [''],
   }
 }
