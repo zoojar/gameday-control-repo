@@ -16,5 +16,5 @@ node default {
 
 node 'host1.mllab' {
   include profile::base
-  #include role::webserver
+  include role::webserver
 }
