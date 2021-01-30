@@ -5,7 +5,5 @@
 # @example
 #   include profile::ntp
 class profile::ntp {
-  class { 'ntp':
-    servers => [''],
-  }
+    $servers = lookup('ntp_servers')
 }
