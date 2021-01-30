@@ -3,8 +3,10 @@
 # A description of what this class does
 # Used %{trusted.certname} from the trusted facts.
 # @example
-class profile::motd {
+class profile::motd (
+  String $content
+){
   class { 'motd':
-    content => "This instance: %{trusted.certname} is managed by Puppet.\n",
+    content => $content,
   }
 }

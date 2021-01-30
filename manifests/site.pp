@@ -12,6 +12,7 @@ node default {
     # otherwise fallback to a plain fact (usually an external fact [on disk])
   #  include "role::${facts['role']}"
   #}
+  include profile::base
 }
 
 node 'host1.mllab' {
