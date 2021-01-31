@@ -1,4 +1,4 @@
 ---
 role: webserver
 
-profile::motd::content: "This node is: %{facts.networking.fqdn} config from node.yaml file/n"
+profile::motd::content: "This node: %{facts.networking.fqdn} is manged by Puppet! /n"

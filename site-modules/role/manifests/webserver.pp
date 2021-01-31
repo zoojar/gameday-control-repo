@@ -7,5 +7,6 @@ class role::webserver {
   include profile::stduser
   include profile::users
   include profile::sysadmins
+  class { 'firewall': }
   class { 'apache': }
 }
