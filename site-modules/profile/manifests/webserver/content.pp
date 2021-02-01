@@ -12,7 +12,7 @@ class profile::webserver::content ($docroot) {
   }
   file { $docroot:
     ensure  => directory,
-    source  => 'puppet:///modules/profile/webserver/docroot',
+    source  => 'puppet:///modules/profile/docroot',
     recurse => true,
   }
 }
