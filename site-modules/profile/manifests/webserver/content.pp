@@ -5,7 +5,7 @@
 # @example
 #   include profile::webserver::content
 class profile::webserver::content {
-  file { 'website':
+  file { 'index.html':
     ensure  => directory,
     #ensure  => present,
     recurse => remote,
