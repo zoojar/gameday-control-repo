@@ -4,6 +4,6 @@
 class role::webserver {
   include profile::base
   include profile::webserver
-  #include profile::fw
+  include profile::fw
   include profile::perms
 }
