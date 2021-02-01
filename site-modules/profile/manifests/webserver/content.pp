@@ -4,15 +4,10 @@
 #
 # @example
 #   include profile::webserver::content
-class profile::webserver::content ($docroot) {
-  # this resource ensures that all parent directories also exist, like mkdir -p
-  dirtree { $docroot:
-    path    => $docroot,
-    parents => true,
-  }
-  file { $docroot:
-    ensure  => directory,
-    source  => 'puppet:///modules/profile/docroot',
-    recurse => true,
-  }
+class profile::webserver::content {
+  file { 'index.html':
+    ensure  => 'present',
+    mode    => '0644',
+    path    => '/var/www/html',
+    content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
 }

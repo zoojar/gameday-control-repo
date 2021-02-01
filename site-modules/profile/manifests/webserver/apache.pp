@@ -4,8 +4,6 @@
 #
 # @example
 #   include profile::webserver::apache
-class profile::webserver::apache ($docroot) {
-  class { 'apache':
-    docroot => $docroot,
-  }
+class profile::webserver::apache {
+  class { 'apache':}
 }
