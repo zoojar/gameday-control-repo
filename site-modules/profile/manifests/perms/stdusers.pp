@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include profile::perms::stduser
-class profile::perms::stduser {
-  group { 'stduser':
+#   include profile::perms::stdusers
+class profile::perms::stdusers {
+  group { 'stdusers':
     ensure => present,
   }
 }
