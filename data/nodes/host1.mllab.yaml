@@ -2,4 +2,3 @@
 role: webserver
 
 profile::motd::content: "This node: %{facts.networking.fqdn} is manged by Puppet! \n"
-class { ['profile::fw::pre', 'profile::fw::post']: }
