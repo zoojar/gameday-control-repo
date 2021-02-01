@@ -12,5 +12,8 @@ class role::webserver {
     before  => Class['profile::fw::post'],
     require => Class['profile::fw::pre'],
   }
-  class { 'apache': }
+  class { 'apache':
+    default_vhost     => false,
+    default_ssl_vhost => false,
+  }
 }
