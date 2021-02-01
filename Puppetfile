@@ -11,7 +11,7 @@ mod 'puppetlabs/registry',  '3.2.0'
 mod 'puppetlabs-motd',  '4.3.0'
 mod 'puppetlabs-firewall', '2.8.0'
 mod 'puppetlabs-apache', '5.9.0'
-mod 'pltraining-dirtree',     '0.3.0'
+mod 'puppet-archive', '4.6.0'
 
 # uncomment this line to add nginx to your modulepath
 #mod 'puppet-nginx',           '0.15.0'

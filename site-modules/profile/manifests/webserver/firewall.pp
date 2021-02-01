@@ -10,10 +10,9 @@ class profile::webserver::firewall {
     before  => Class['profile::fw::post'],
     require => Class['profile::fw::pre'],
   }
-  #firewall { '100 allow http and https access':
-  #  dport   => [80, 443],
-  #  proto   => 'tcp',
-  #  action  => 'accept',
-  #}
-
+  firewall { '100 allow http and https access':
+    dport  => [80, 443],
+    proto  => 'tcp',
+    action => 'accept',
+  }
 }
