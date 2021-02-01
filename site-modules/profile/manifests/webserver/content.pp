@@ -10,7 +10,7 @@ class profile::webserver::content {
     recurse => remote,
     source  => 'puppet:///modules/webserver/files/website/',
     mode    => '0644',
-    path    => '$docroot',
+    path    => '/var/www/mllab/',
     #content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
   }
 }
