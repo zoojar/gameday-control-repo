@@ -5,7 +5,7 @@
 # @example
 #   include profile::webserver::content
 class profile::webserver::content {
-  file { 'index':
+  file { '/var/www/':
     ensure  => directory,
     recurse => remote,
     source  => 'puppet:///modules/webserver/files/website/',
