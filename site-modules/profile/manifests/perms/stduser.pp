@@ -3,8 +3,8 @@
 # A description of what this class does
 #
 # @example
-#   include profile::stduser
-class profile::stduser {
+#   include profile::perms::stduser
+class profile::perms::stduser {
   group { 'stduser':
     ensure => present,
   }

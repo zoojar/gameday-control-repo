@@ -3,17 +3,7 @@
 #All roles should include the base profile
 class role::webserver {
   include profile::base
-  include profile::sysadmins
-  include profile::stduser
-  include profile::users
-  include profile::sysadmins
-  class { 'firewall': }
-  firewall {
-    before  => Class['profile::fw::post'],
-    require => Class['profile::fw::pre'],
-  }
-  class { 'apache':
-    default_vhost     => false,
-    default_ssl_vhost => false,
-  }
+  include profile::webserver
+  include profile::fw
+  include profile::perms
 }

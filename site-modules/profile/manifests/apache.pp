@@ -1,9 +1,9 @@
 #   include profile::apache
-class profile::apache {
-  include apache
-  apache::vhost { 'localhost':
-    ensure => present,
-  }
+#class profile::apache {
+#  include apache
+#  apache::vhost { 'localhost':
+#    ensure => present,
+#  }
   #file { 'index.html':
   #  ensure  => 'present',
   #  mode    => '0644',
@@ -12,12 +12,9 @@ class profile::apache {
   #}
   # source for webpage
   #//files/game-day 
-
-  firewall { '100 allow http and https access':
-    dport  => [80, 443],
-    proto  => 'tcp',
-    action => 'accept',
-  }
-}
+#  class { 'apache':
+#    default_vhost     => false,
+#    default_ssl_vhost => false,
+#  }
 
 

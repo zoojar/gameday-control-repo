@@ -3,8 +3,8 @@
 # A description of what this class does
 #
 # @example
-#   include profile::sysadmins
-class profile::sysadmins {
+#   include profile::perms::sysadmins
+class profile::perms::sysadmins {
   group { 'sysadmins':
     ensure => present,
   }

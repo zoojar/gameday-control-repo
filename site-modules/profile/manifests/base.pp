@@ -2,4 +2,8 @@
 class profile::base {
   include profile::motd
   include profile::ntp
+
+  package { 'tree':
+    ensure => present,
+  }
 }

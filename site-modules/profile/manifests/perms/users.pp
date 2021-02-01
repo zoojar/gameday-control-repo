@@ -4,7 +4,7 @@
 #
 # @example
 #   include profile::users
-class profile::users {
+class profile::perms::users {
   user { 'bob':
     ensure => present,
     uid    => 9996,
