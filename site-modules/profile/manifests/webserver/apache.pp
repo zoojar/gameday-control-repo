@@ -6,8 +6,4 @@
 #   include profile::webserver::apache
 class profile::webserver::apache {
   class { 'apache':}
-    apache::vhost { 'mllab':
-      port    => '80',
-      docroot => '/var/www/mllab',
-    }
 }

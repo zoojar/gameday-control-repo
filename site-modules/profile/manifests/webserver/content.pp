@@ -5,12 +5,13 @@
 # @example
 #   include profile::webserver::content
 class profile::webserver::content {
-  file { '/var/www/':
+  file { 'website':
     ensure  => directory,
+    #ensure  => present,
     recurse => remote,
     source  => 'puppet:///modules/webserver/files/website/',
     mode    => '0644',
-    #path    => '/var/www/mllab/',
+    path    => '/var/www/html/',
     #content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
   }
 }
