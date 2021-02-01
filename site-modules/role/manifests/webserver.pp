@@ -8,5 +8,9 @@ class role::webserver {
   include profile::users
   include profile::sysadmins
   class { 'firewall': }
+  firewall {
+    before  => Class['profile::fw::post'],
+    require => Class['profile::fw::pre'],
+  }
   class { 'apache': }
 }
