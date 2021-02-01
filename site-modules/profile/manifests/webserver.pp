@@ -4,15 +4,11 @@
 #
 # @example
 #   include profile::webserver
-class profile::webserver (
-  $docroot = '/var/www/html/'
-) {
+class profile::webserver {
   class { 'profile::webserver::apache':
-    docroot => $docroot
   }
 
   class { 'profile::webserver::content':
-    docroot => $docroot
   }
 
   firewall { '100 allow http and https access':
