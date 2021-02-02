@@ -15,10 +15,14 @@ apache::vhost { 'mllab':
   port          => '80',
 }
 
+file { '/var/www/html/':
+  ensure => directory,
+}
+
 file { 'site-content':
     ensure  => present,
     mode    => '0644',
     path    => '/var/www/html/index.html/',
-    content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
+    content => '<h1>Welcome to the VMER Game day !!</h1> <br/> <h2> This is a test page </h2>',
   }
 }
