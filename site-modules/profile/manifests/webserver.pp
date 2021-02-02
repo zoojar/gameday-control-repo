@@ -7,9 +7,9 @@
 class profile::webserver {
   class { 'apache': }
 
-apache::vhost { 'mllab.com':
+apache::vhost { 'mllab':
   serveraliases => [],
-  docroot       => '/var/www/mllab',
+  docroot       => '/var/www/html',
   docroot_owner => 'apache',
   docroot_group => 'apache',
   port          => '80',
@@ -18,7 +18,7 @@ apache::vhost { 'mllab.com':
 file { 'site-content':
     ensure  => present,
     mode    => '0644',
-    path    => '/var/www/mllab/index.html/',
+    path    => '/var/www/html/index.html/',
     content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
   }
 }
