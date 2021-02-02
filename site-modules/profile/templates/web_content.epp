@@ -15,8 +15,8 @@
   <label for="coffee">A cup of Coffee</label><br>
   <input type="radio" id="tea" name="drink" value="tea">
   <label for="tea">A cup of Tea</label><br>
-  <input type="radio" id="milk" name="drink" value="milk">
-  <label for="milk">Do you like milk in your tea or coffee?</label>
+  <input type="radio" id="rum" name="drink" value="rum">
+  <label for="rum">Or would you like a glass of Rum?</label>
 </form> 
 </body>
 </html>
