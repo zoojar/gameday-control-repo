@@ -3,7 +3,5 @@
 #All roles should include the base profile
 class role::webserver {
   include profile::base
-  include profile::webserver
-  include profile::fw
   include profile::perms
 }
