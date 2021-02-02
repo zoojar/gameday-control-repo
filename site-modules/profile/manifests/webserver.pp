@@ -12,7 +12,7 @@ $docroot = lookup('docroot')
 $docroot_path = lookup('docroot_path')
 $docroot_group = lookup('docroot_group')
 $docroot_owner = lookup('docroot_owner')
-$web_content = epp('profile/web_content.epp'))
+$web_content = epp('profile/web_content.epp')
 $web_port = lookup('web_port')
 $web_perm = lookup('web_perm')
 
