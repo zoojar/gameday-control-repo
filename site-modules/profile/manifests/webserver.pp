@@ -10,8 +10,8 @@ class profile::webserver {
 apache::vhost { 'mllab.com':
   serveraliases => [],
   docroot       => '/var/www/mllab',
-  docroot_owner => 'www-data',
-  docroot_group => 'www-data',
+  docroot_owner => 'apache',
+  docroot_group => 'apache',
   port          => '80',
 }
 
