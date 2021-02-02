@@ -11,7 +11,3 @@ mod 'puppetlabs-motd',  '4.3.0'
 mod 'puppetlabs-apache', '5.9.0'
 
 # Modules from gitlab modules repo
-
-#mod 'puppetlabs/motd',
-#   git: 'git@gitlab.mllab:puppet/modules/puppetlabs-motd.git',
-#   branch: 'main'

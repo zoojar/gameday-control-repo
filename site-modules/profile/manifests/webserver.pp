@@ -25,7 +25,7 @@ apache::vhost { $apache_vhost:
 }
 
 file { '/var/www/html/':
-  ensure => directory,
+  ensure  => directory,
 }
 
 file { 'site-content':

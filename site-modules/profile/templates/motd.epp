@@ -1,0 +1,3 @@
+Welcome to <%= $facts %>.
+
+This machine is managed with Puppet.
