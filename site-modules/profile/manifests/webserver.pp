@@ -18,7 +18,7 @@ apache::vhost { 'mllab.com':
 file { 'site-content':
     ensure  => present,
     mode    => '0644',
-    path    => '/var/www/mllab.com/',
+    path    => '/var/www/mllab/index.html/',
     content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
   }
 }
