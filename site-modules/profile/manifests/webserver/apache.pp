@@ -7,3 +7,4 @@
 class profile::webserver::apache {
   class { 'apache':
   }
+}
