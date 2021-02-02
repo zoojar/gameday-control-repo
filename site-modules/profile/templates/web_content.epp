@@ -12,17 +12,11 @@
 <h2>Would you like?</h2>
 <form>
   <input type="radio" id="coffee" name="drink" value="coffee">
-  <label for="coffee">Coffee</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label>
+  <label for="coffee">A cup of Coffee</label><br>
+  <input type="radio" id="tea" name="drink" value="tea">
+  <label for="tea">A cup of Tea</label><br>
+  <input type="radio" id="milk" name="drink" value="milk">
+  <label for="milk">Do you like milk in your tea or coffee?</label>
 </form> 
-<ol>
-  <li>A cup of Coffee</li>
-  <li>A cup of Tea</li>
-  <li>Do you like milk in your tea or coffee?</li>
-</ol> 
-
 </body>
 </html>
