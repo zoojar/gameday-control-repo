@@ -1,1 +1,5 @@
 --relative
+--no-140chars-check
+--no-documentation-check
+--no-star_comments-check
+--no-double_quoted_strings-check

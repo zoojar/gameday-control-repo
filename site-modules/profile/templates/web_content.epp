@@ -3,26 +3,19 @@
 <head>
   <title>GAME DAY</title>
 </head>
-# lint:ignore:double_quoted_strings
-<body style="background-color:LightGrey;">
-# lint:endignore
-
+<body style='background-color:LightGrey;'>
 <h1>Hello from Puppet Game Day</h1>
 <br/>
 <h2>This is a test page from a puppet epp template</h2>
-
 <h2>'This host is called: <%= $fqdn %>.'</h2>
-
 <h2>Would you like?</h2>
 <form>
-# lint:ignore:double_quoted_strings
-  <input type="radio" id="coffee" name="drink" value="coffee">
-  <label for="coffee">A cup of Coffee</label><br>
-  <input type="radio" id="tea" name="drink" value="tea">
-  <label for="tea">A cup of Tea</label><br>
-  <input type="radio" id="rum" name="drink" value="rum">
-  <label for="rum">Or would you like a glass of Rum?</label>
-# lint:endignore
+  <input type='radio' id='coffee' name='drink' value='coffee'>
+  <label for='coffee'>A cup of Coffee</label><br>
+  <input type='radio' id='tea' name='drink' value='tea'>
+  <label for='tea'>A cup of Tea</label><br>
+  <input type='radio' id='rum' name='drink' value='rum'>
+  <label for='rum'>Or would you like a glass of Rum?</label>
 </form>
 </body>
 </html>
