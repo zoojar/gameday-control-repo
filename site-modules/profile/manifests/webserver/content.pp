@@ -8,7 +8,7 @@ class profile::webserver::content {
   file { 'site-content':
     ensure  => present,
     mode    => '0644',
-    path    => '/var/www/html/',
+    path    => '/var/www/test/',
     content => '<h1>Hello World! </h1> <br/> <h2> Test page </h2>',
   }
 }

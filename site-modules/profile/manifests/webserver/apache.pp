@@ -5,7 +5,5 @@
 # @example
 #   include profile::webserver::apache
 class profile::webserver::apache {
-  class { 'apache':
-    default_mods => false,
-  }
+    #default_mods => false,
 }
