@@ -32,7 +32,7 @@ file { 'site-content':
     ensure  => present,
     mode    => $web_perm,
     path    => $docroot_path,
-    content => epp(templates/web_content.epp),
+    content => epp(profile/web_content.epp),
     #content => $web_content,
   }
 }
