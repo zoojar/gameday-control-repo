@@ -9,6 +9,6 @@ class profile::motd (
   String $content
 ){
   class { 'motd':
-    content => epp('profile/motd.epp', { fqdn => $facts['networking']['fqdn'] }),,
+    content => epp('profile/motd.epp', { fqdn => $facts['networking']['fqdn'] }),
   }
 }
