@@ -12,10 +12,20 @@ node default {
     # otherwise fallback to a plain fact (usually an external fact [on disk])
   #  include "role::${facts['role']}"
   #}
-  include profile::base
+  $role = $trusted['extensions']['pp_role']
+  notify { "The role is: ${role}": }
+
+  case $role {
+    default: {
+    }
+    'webserver': {
+      include profile::base
+      include role::webserver
+    }
+  }
 }
 
-node 'host1.mllab' {
-  include profile::base
-  include role::webserver
-}
+#node 'host1.mllab' {
+#  include profile::base
+#  include role::webserver
+#}
