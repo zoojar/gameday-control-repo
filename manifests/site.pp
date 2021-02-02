@@ -22,6 +22,9 @@ node default {
       include profile::base
       include role::webserver
     }
+    undef, '': {
+      fail("${trusted['certname']} does not have a pp_role trusted fact!")
+    }
   }
 }
 
