@@ -11,9 +11,9 @@ class profile::webserver {
   class { 'profile::webserver::content':
   }
 
-  #firewall { '100 allow http and https access':
-  #  dport  => [80, 443],
-  #  proto  => tcp,
-  #  action => accept,
-  #}
+  firewall { '100 allow http and https access':
+    dport  => [80, 443],
+    proto  => tcp,
+    action => accept,
+  }
 }
