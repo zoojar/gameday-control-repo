@@ -9,6 +9,8 @@
 <br/>
 <h2>This is a test page from a puppet epp template</h2>
 
+This host is called: <%= $fqdn %>.
+
 <h2>Would you like?</h2>
 <form>
   <input type="radio" id="coffee" name="drink" value="coffee">
