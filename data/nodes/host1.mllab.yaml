@@ -1,13 +1,2 @@
 ---
 role: webserver
-
-profile::motd::content: "This node: %{facts.networking.fqdn} is manged by Puppet! \n"
-
-# apache config
-apache_vhost: mllab
-docroot: /var/www/html
-docroot_path: /var/www/html/index.html
-docroot_group: apache
-docroot_owner: apache
-web_port: '80'
-web_perm: '0644'

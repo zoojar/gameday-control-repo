@@ -1,0 +1,11 @@
+---
+profile::motd::content: "This node: %{facts.networking.fqdn} is manged by Puppet! \n"
+
+# apache config
+profile::webserver::apache_vhost: mllab
+profile::webserver::docroot: /var/www/html
+profile::webserver::web_content: index.html
+profile::webserver::docroot_group: apache
+profile::webserver::docroot_owner: apache
+profile::webserver::web_port: 80
+profile::webserver::web_perm: '0644'

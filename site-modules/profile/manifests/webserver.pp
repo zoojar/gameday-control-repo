@@ -4,34 +4,30 @@
 #
 # @example
 #   include profile::webserver
-class profile::webserver {
+class profile::webserver (
+  String $apache_vhost,
+  Stdlib::Absolutepath $docroot,
+  Stdlib::Absolutepath $web_content,
+  String $docroot_group,
+  String $docroot_owner,
+  Stdlib::Port $web_port,
+  Stdlib::Filemode $web_perm,
+) {
   class { 'apache': }
 
-$apache_vhost = lookup('apache_vhost')
-$docroot = lookup('docroot')
-$docroot_path = lookup('docroot_path')
-$docroot_group = lookup('docroot_group')
-$docroot_owner = lookup('docroot_owner')
-$web_content = epp('profile/web_content.epp', { fqdn => $facts['networking']['fqdn'] })
-$web_port = lookup('web_port')
-$web_perm = lookup('web_perm')
+  apache::vhost { $apache_vhost:
+    serveraliases  => [],
+    port           => $web_port,
+    manage_docroot => true,
+    docroot        => $docroot,
+    docroot_owner  => $docroot_owner,
+    docroot_group  => $docroot_group,
+  }
 
-apache::vhost { $apache_vhost:
-  serveraliases => [],
-  docroot       => $docroot,
-  docroot_owner => $docroot_owner,
-  docroot_group => $docroot_group,
-  port          => $web_port,
-}
-
-file { '/var/www/html/':
-  ensure  => directory,
-}
-
-file { 'site-content':
-    ensure  => present,
-    mode    => $web_perm,
-    path    => $docroot_path,
-    content => $web_content,
+  file { 'site-content':
+      ensure  => file,
+      mode    => $web_perm,
+      path    => "${docroot}/${web_content}",
+      content => epp('profile/web_content.epp', { fqdn => $facts['networking']['fqdn'] }),
   }
 }

@@ -3,4 +3,10 @@
 ---
 fixtures:
   forge_modules:
-#     stdlib: "puppetlabs/stdlib"
+    stdlib: "puppetlabs/stdlib"
+    puppetlabs-ntp:
+      repo: 'puppetlabs-ntp'
+      ref: '8.5.0'
+    puppetlabs-apache:
+      repo: 'puppetlabs-apache'
+      ref: '5.9.0'

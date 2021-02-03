@@ -8,5 +8,7 @@ hierarchy:
   - name: "Yaml backend"
     data_hash: yaml_data
     paths:
-      - "nodes/%{trusted.certname}.yaml"
+      - "nodes/%{trusted.certname}.yaml" # ONLY USED FOR CLASSIFICATION! 1 node : 1 role : 1 key
+      - "roles/%{trusted.extensions.pp_role}.yaml"  # trusted fact first
+      - "roles/%{role}.yaml"                        # fall back to plain fact
       - "common.yaml"
